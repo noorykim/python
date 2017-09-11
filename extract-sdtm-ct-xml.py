@@ -21,11 +21,6 @@ if len(url) < 1:
 	# url = 'file:///Users/.../Dropbox/2017-training/py4e/SDTM-ct-odm.xml'
 print('Retrieving', url)
 
-# fn = 'SDTM-ct-odm.xml'
-# tree = ET.parse(fn)
-# root = tree.getroot()
-# print('Root: ', root)
-
 # open and read file
 ## xml = urllib.request.urlopen(url, context=ctx).read()
 uh = urllib.request.urlopen(url)
@@ -33,7 +28,7 @@ data = uh.read()
 ## print('Retrieved', len(data), 'characters')
 
 # prints xml tree
-# print(data.decode())
+## print(data.decode())
 
 # use ElementTree package to parse xml
 tree = ET.fromstring(data)
