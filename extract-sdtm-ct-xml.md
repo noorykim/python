@@ -1,4 +1,4 @@
-# Extract sdtm-ct-xml
+# Extract code and name values for CDISC SDTM controlled terminology
 
 
 
