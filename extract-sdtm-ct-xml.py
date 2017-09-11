@@ -7,12 +7,18 @@ import re
 import urllib.request, urllib.parse, urllib.error
 import xml.etree.cElementTree as ET
 
+# to assess runtime
+from datetime import datetime
+start = datetime.now()
+
+
 # get location of odm-xml file with the controlled terminology
 url = input("Enter location: ")
 # define default location
 if len(url) < 1:
-	# url = 'https://evs.nci.nih.gov/ftp1/CDISC/SDTM/SDTM%20Terminology.odm.xml'
-	url = 'file:///Users/.../Dropbox/2017-training/py4e/SDTM-ct-odm.xml'
+	url = 'https://evs.nci.nih.gov/ftp1/CDISC/SDTM/SDTM%20Terminology.odm.xml'
+	
+	# url = 'file:///Users/.../Dropbox/2017-training/py4e/SDTM-ct-odm.xml'
 print('Retrieving', url)
 
 # fn = 'SDTM-ct-odm.xml'
@@ -37,6 +43,7 @@ namespace = {}
 
 # add entries to dictionary
 namespace['root.tag'] = tree.tag
+# use regular expression to extract default namespace
 ns_default = re.findall("{([^}]*)", tree.tag)[0]
 print(ns_default)
 namespace['root'] = ns_default
@@ -54,3 +61,6 @@ for codelist in tree.find('root:Study', namespace).find('root:MetaDataVersion', 
 		item_code = item.attrib['{http://ncicb.nci.nih.gov/xml/odm/EVS/CDISC}ExtCodeID']
 		item_value = item.attrib['CodedValue']
 		print('EnumeratedItem: ', item_code, item_value)
+
+# to assess runtime
+print(datetime.now()-start)
