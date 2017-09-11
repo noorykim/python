@@ -4,7 +4,7 @@
 ## Extract values from XML 
 
 ### Extract code and name values for CDISC SDTM controlled terminology
-[extract-sdtm-ct-xml.py](extract-sdtm-ct-xml.py)
+[extract-sdtm-ct-xml.py](/programs/extract-sdtm-ct-xml.py)
 
 #
 
