@@ -1,6 +1,8 @@
 # Extract code and name values for CDISC SDTM controlled terminology
 
+## Source data
 
+[CDISC SDTM controlled terminology in odm-xml format](https://evs.nci.nih.gov/ftp1/CDISC/SDTM/SDTM%20Terminology.odm.xml)
 
 ## Python code
 
