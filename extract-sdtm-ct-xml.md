@@ -2,8 +2,7 @@
 
 ## Source data
 
-[CDISC SDTM controlled terminology in odm-xml format](https://evs.nci.nih.gov/ftp1/CDISC/SDTM/SDTM%20Terminology.odm.xml)
-[Parent directory](https://evs.nci.nih.gov/ftp1/CDISC/SDTM/)
+[CDISC SDTM controlled terminology in odm-xml format](https://evs.nci.nih.gov/ftp1/CDISC/SDTM/SDTM%20Terminology.odm.xml) < [Parent directory](https://evs.nci.nih.gov/ftp1/CDISC/SDTM/) < [National Cancer Institute (has links to other formats)](https://www.cancer.gov/research/resources/terminology/cdisc)
 
 
 ## Python code
