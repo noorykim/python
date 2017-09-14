@@ -17,8 +17,24 @@ Extended objective: Have SAS import the text files and use them as hash tables t
 Delimited text files / variables : 
 
 1. codelists.csv /  codelist_code, codelist_description
-2. items.csv / codelist_code, items_code, items_description
+```
+codelist_code;codelist_description 
+C115388;6 Minute Walk Test test code.
+C115387;6 Minute Walk Test test name.
+C101805;Abnormal Involuntary Movement Scale test code.
+C101806;Abnormal Involuntary Movement Scale test name.
+...
+```
 
+2. items.csv / codelist_code, items_code, items_description
+```
+codelist_code;item_code;item_value
+C115388;C115800;SIXMW101
+C115388;C115801;SIXMW102
+C115388;C115802;SIXMW103
+C115388;C115803;SIXMW104
+...
+```
 
 ## Outline / Pseudocode
 
