@@ -76,7 +76,7 @@ data = webdata.read()
 ## use ElementTree package to parse xml
 tree = ET.fromstring(data)
 
-## setup namespace dictionary
+## initialize namespace dictionary
 namespace = {}
 
 ## use regular expression to extract default namespace
@@ -89,7 +89,7 @@ namespace['root'] = ns_default
 namespace['ct'] = 'http://ncicb.nci.nih.gov/xml/odm/EVS/CDISC'
 #print(namespace)
 
-## setup lists
+## initialize lists
 codelists = []
 items = []
 
