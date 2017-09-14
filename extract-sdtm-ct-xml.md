@@ -38,11 +38,16 @@ C115388;C115803;SIXMW104
 
 ## Outline / Pseudocode
 
-1. Input/import XML webpage (using python package urllib)
-2. Extract values from XML (using python packages xml and re)
-3. Put values into data frames/sets (using python package pandas)
-4. Output data frames as text files (using python package pandas)
+1. Input/import XML webpage 
+2. Extract values from XML 
+3. Put values into data frames/sets
+4. Output data frames as text files
 
+Python packages used (for step #)
+- pandas (3,4)
+- re (2)
+- urllib (1)
+- xml (2)
 
 ## Python code
 
