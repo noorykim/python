@@ -2,7 +2,9 @@
 
 ## Objective
 
-Extract from an XML document codelists to be saved ao (semi-colon) delimited text files.
+Extract (CDISC SDTM CT) data from an XML document and output as (semi-colon) delimited text files.
+
+Extended objective: Have SAS import the text files and use them as hash tables to populate codelist-level metadata.
 
 
 ## Input / Source data
