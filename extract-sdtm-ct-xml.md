@@ -12,12 +12,18 @@ Extract from an XML document codelists to be saved ao (semi-colon) delimited tex
 
 ## Output 
 
-Delimited text files: (1) codelists.csv, (2) items.csv
+Delimited text files / variables : 
+
+1. codelists.csv /  codelist_code, codelist_description
+2. items.csv / codelist_code, items_code, items_description
 
 
 ## Outline / Pseudocode
 
-
+1. Input/import XML webpage (using python package urllib)
+2. Extract values from XML (using python packages xml and re)
+3. Put values into data frames/sets (using python package pandas)
+4. Output data frames as text files (using python package pandas)
 
 
 ## Python code
