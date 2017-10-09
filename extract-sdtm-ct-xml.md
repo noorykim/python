@@ -51,7 +51,7 @@ Python packages used (for step #)
 
 ## Python code
 
-[Code](programs/extract-sdtm-ct-xml.py)
+[extract-sdtm-ct-xml.py](programs/extract-sdtm-ct-xml.py)
 
 
 ## Keywords
